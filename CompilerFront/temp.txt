@@ -1,0 +1,148 @@
+over sign set:
+{'!',
+ '!=',
+ '(',
+ ')',
+ '*',
+ '+',
+ ',',
+ '-',
+ '/',
+ ';',
+ '<',
+ '<=',
+ '=',
+ '==',
+ '>',
+ '>=',
+ '[',
+ ']',
+ 'and',
+ 'bool',
+ 'break',
+ 'char',
+ 'continue',
+ 'do',
+ 'double',
+ 'else',
+ 'false',
+ 'float',
+ 'id',
+ 'if',
+ 'int',
+ 'num',
+ 'or',
+ 'true',
+ 'while',
+ '{',
+ '}'}
+reserved word set:
+{'and',
+ 'bool',
+ 'break',
+ 'char',
+ 'continue',
+ 'do',
+ 'double',
+ 'else',
+ 'false',
+ 'float',
+ 'id',
+ 'if',
+ 'int',
+ 'num',
+ 'or',
+ 'true',
+ 'while'}
+one_op_set:
+{';', '{', '/', '*', '+', '(', ']', '-', ')', '}', '[', ','}
+two_next dict:
+{'!': {'=', ''}, '<': {'=', ''}, '=': {'=', ''}, '>': {'=', ''}}
+analysing: input.txt
+
+{
+   int[10] i;
+   int j = 1, k = 10, m = mm;
+   int k;
+   if (false){
+       i = 1;
+   }
+   else
+       a = 1;
+
+   int[10] ii;;
+
+   while ( a <= b)
+       j = 2;
+       if (i < 1) {
+           break;
+       }
+}
+
+{ {
+int int
+[ [
+10 num
+] ]
+i id
+; ;
+int int
+j id
+= =
+1 num
+, ,
+k id
+= =
+10 num
+, ,
+m id
+= =
+mm id
+; ;
+int int
+k id
+; ;
+if if
+( (
+false false
+) )
+{ {
+i id
+= =
+1 num
+; ;
+} }
+else else
+a id
+= =
+1 num
+; ;
+int int
+[ [
+10 num
+] ]
+ii id
+; ;
+; ;
+while while
+( (
+a id
+<= <=
+b id
+) )
+j id
+= =
+2 num
+; ;
+if if
+( (
+i id
+< <
+1 num
+) )
+{ {
+break break
+; ;
+} }
+} }
+ok

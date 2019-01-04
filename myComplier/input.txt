@@ -1,0 +1,10 @@
+program myProgram;
+    const a:=1;
+    var b;
+    procedure b(a)
+    	const c:=2;
+    	var d;
+    	begin
+    		b=1+2;
+    		d=a+c;
+   	 	end

@@ -1,0 +1,72 @@
+reserved word set:
+{'begin',
+ 'call',
+ 'const',
+ 'do',
+ 'else',
+ 'end',
+ 'id',
+ 'if',
+ 'integer',
+ 'procedure',
+ 'program',
+ 'read',
+ 'then',
+ 'var',
+ 'while',
+ 'write'}
+one_op_set:
+{',', ')', '*', '(', ';', '+', '/', '-'}
+two_next dict:
+{'!': {'='}, ':': {'='}, '<': {'', '='}, '=': {'='}, '>': {'', '='}}
+analysing: input.txt
+
+program myProgram;
+    const a:=1;
+    var b;
+    procedure b(a)
+    	const c:=2;
+    	var d;
+    	begin
+    		b=1+2;
+    		d=a+c;
+   	 	end
+
+program program
+myProgram id
+; ;
+const const
+a id
+:= :=
+1 num
+; ;
+var var
+b id
+; ;
+procedure procedure
+b id
+( (
+a id
+) )
+const const
+c id
+:= :=
+2 num
+; ;
+var var
+d id
+; ;
+begin begin
+b id
+= =
+1 num
++ +
+2 num
+; ;
+d id
+= =
+a id
++ +
+c id
+; ;
+end end
