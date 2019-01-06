@@ -1,4 +1,5 @@
 import json
+import sys
 from pprint import pprint
 from copy import deepcopy
 
@@ -18,7 +19,7 @@ class Compiler:
     #双目操作符
     two_next = dict()
 
-    def __init__(self, log_level=0, sharp='#', point='.', acc='acc', productions_file='productions.txt'):
+    def __init__(self, log_level=2, sharp='#', point='.', acc='acc', productions_file='productions.txt'):
         #设置在终端的日志的等级
         self.log_level = log_level
 
@@ -78,7 +79,7 @@ class Compiler:
                 remove_set.add(sign)
         for sign in remove_set:
             self.one_op_set.remove(sign)
-        if self.log_level >= 0:
+        if self.log_level >= 3:
             #print('over sign set:')
             #pprint(self.overs)
             print('reserved word set:')
@@ -145,7 +146,7 @@ class Compiler:
                                 self.follow[sign] |= self.follow[nontermainal]
             if old_follow == self.follow:
                 break
-        if self.log_level >= 2:
+        if self.log_level >= 3:
             print('follow:')
             pprint(self.follow)
 
@@ -162,7 +163,7 @@ class Compiler:
                         right[:i] + [self.point, ] + right[i:]
                     )
                 self.items[nonterminal].append(right + [self.point, ])
-        if self.log_level >= 2:
+        if self.log_level >= 3:
             print('items:')
             pprint(self.items)
 
@@ -267,7 +268,7 @@ class Compiler:
             # 如果没有状态可以分析，结束循环
             if index > last_index:
                 break
-        if self.log_level >= 2:
+        if self.log_level >= 3:
             print('stauts list:')
             pprint(self.status_list)
             print('analyse table:')
@@ -310,7 +311,7 @@ class Compiler:
     def digit(self):
         while self.index < len(self.raw_string) and self.raw_string[self.index].isdigit() and self.get_char():
             pass
-        self.out('num')
+        self.out('integer')
         return True
 
     # 如果是单符号终结符，直接调用out
@@ -386,6 +387,8 @@ class Compiler:
         sign_stack = [self.sharp, ]
         # 初始化语义分析的四元式列表、分析栈
         siyuanshi_list = []
+        temp_stack = []
+        temp_index = 0
         # 不停分析直到接受
         while self.analyse_table[status_stack[-1]][self.tag_list[string_index]][0] != self.acc:
             # 如果不是r，则为s
@@ -393,33 +396,68 @@ class Compiler:
                 # push
                 status_stack.append(self.analyse_table[status_stack[-1]][self.tag_list[string_index]][0])
                 sign_stack.append(self.tag_list[string_index])
+                if(self.tag_list[string_index]=='id'):
+                    temp_stack.append(self.string_list[string_index])
+                elif(self.tag_list[string_index]=='integer'):
+                    temp_stack.append(self.string_list[string_index])
+                elif(self.tag_list[string_index]=='<'):
+                    temp_stack.append(self.tag_list[string_index])
+
                 # advance
                 string_index += 1
                 if self.log_level >= 1:
-                    print(status_stack, sign_stack)
+                    print(status_stack, sign_stack,temp_stack)
             else:
                 # 为r，取出对应产生式的左部与右部
                 left = self.analyse_table[status_stack[-1]][self.tag_list[string_index]][2][0]
                 right = self.analyse_table[status_stack[-1]][self.tag_list[string_index]][2][1]
                 # 语义分析，四元式
-                # TO-DO
+                if any([i in right for i in ['+', '-', '*', '/']]):
+                    op = right[1]
+                    one = temp_stack[-2] if type(temp_stack[-2]) == str else 'temp%d' % temp_stack[-2]
+                    two = temp_stack[-1] if type(temp_stack[-1]) == str else 'temp%d' % temp_stack[-1]
+                    result = 'temp%d' % temp_index
+                    siyuanshi_list.append((op, one, two, result))
+                    temp_stack.pop()
+                    temp_stack.pop()
+                    temp_stack.append(temp_index)
+                    temp_index += 1
+                elif ':=' in right:
+                    op = right[1]
+                    one = temp_stack[-1] if type(temp_stack[-1]) == str else 'temp%d' % temp_stack[-1]
+                    two = '_'
+                    result = temp_stack[-2] if type(temp_stack[-2]) == str else 'temp%d' % temp_stack[-2]
+                    siyuanshi_list.append((op, one, two, result))
+                    temp_stack.pop()
+                    temp_stack.pop()
+                elif '<' in right:
+                    op = right[1]
+                    one = temp_stack[-2] if type(temp_stack[-2]) == str else 'temp%d' % temp_stack[-2]
+                    two = temp_stack[-1] if type(temp_stack[-1]) == str else 'temp%d' % temp_stack[-1]
+                    result = 'temp%d' % temp_index
+                    siyuanshi_list.append((op, one, two, result))
+                    temp_stack.pop()
+                    temp_stack.pop()
+                    temp_stack.append(temp_index)
+                    temp_index += 1
                 # 语义分析结束
                 # pop(第i个产生式右部文法符号的个数)
                 for i in range(len(right)):
                     sign_stack.pop()
                     status_stack.pop()
                 if self.log_level >= 1:
-                    print(status_stack, sign_stack)
+                    print(status_stack, sign_stack,temp_stack)
                 # push(GOTO[新的栈顶状态][第i个产生式的左部])
                 status_stack.append(self.analyse_table[status_stack[-1]][left][0])
                 sign_stack.append(left)
                 if self.log_level >= 1:
-                    print(status_stack, sign_stack)
+                    print(status_stack, sign_stack,temp_stack)
             # error，退出循环
             if self.tag_list[string_index] not in self.analyse_table[status_stack[-1]].keys():
                 print('fail1', string_index, self.tag_list[string_index], status_stack[-1])
                 return False
         if self.log_level >= 2:
+            print("四元式：")
             pprint(siyuanshi_list)
         with open(self.file_name + '.four', 'w') as f:
             for siyuanshi in siyuanshi_list:
@@ -432,7 +470,10 @@ class Compiler:
         self.raw_string = raw_string.replace('\t', '').replace('\n', '')
         self.file_name = file[ :file.rindex('.')]
         print('analysing: ' + file, end='\n\n')
-        if self.log_level >= 0:
+        if self.log_level >= 3:
             print(raw_string, end='\n\n')
 
-        self.analyse_cifa() #and self.analyse_yufa()
+        self.analyse_cifa() and self.analyse_yufa()
+
+analyzer1 = Compiler()
+analyzer1.analyse("input.txt")
