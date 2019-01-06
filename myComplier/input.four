@@ -1,0 +1,3 @@
++ a s temp0
+* temp0 sd temp1
+:= temp1 _ b

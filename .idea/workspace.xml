@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5fd6355b-9885-49ec-90a6-e8a39a197d22" name="Default Changelist" comment="" />
+    <list default="true" id="5fd6355b-9885-49ec-90a6-e8a39a197d22" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CompilerFront/input.two" beforeDir="false" afterPath="$PROJECT_DIR$/CompilerFront/input.two" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CompilerFront/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CompilerFront/input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CompilerFront/temp.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CompilerFront/temp.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myComplier/input.two" beforeDir="false" afterPath="$PROJECT_DIR$/myComplier/input.two" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myComplier/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/myComplier/input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myComplier/myCompiler.py" beforeDir="false" afterPath="$PROJECT_DIR$/myComplier/myCompiler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myComplier/mySet_productions.py" beforeDir="false" afterPath="$PROJECT_DIR$/myComplier/mySet_productions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myComplier/productions.txt" beforeDir="false" afterPath="$PROJECT_DIR$/myComplier/productions.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myComplier/temp.txt" beforeDir="false" afterPath="$PROJECT_DIR$/myComplier/temp.txt" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -9,51 +21,35 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/byks$mySet_productions.coverage" NAME="mySet_productions Coverage Results" MODIFIED="1546583249924" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/myComplier" />
+    <SUITE FILE_PATH="coverage/byks$mySet_productions.coverage" NAME="mySet_productions Coverage Results" MODIFIED="1546745892906" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/myComplier" />
     <SUITE FILE_PATH="coverage/byks$SLRAnalyzer.coverage" NAME="SLRAnalyzer Coverage Results" MODIFIED="1546487597350" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zitai" />
-    <SUITE FILE_PATH="coverage/byks$myFront_end.coverage" NAME="myFront_end Coverage Results" MODIFIED="1546583253548" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/myComplier" />
+    <SUITE FILE_PATH="coverage/byks$myCompiler.coverage" NAME="myCompiler Coverage Results" MODIFIED="1546746558780" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/myComplier" />
+    <SUITE FILE_PATH="coverage/byks$myFront_end.coverage" NAME="myFront_end Coverage Results" MODIFIED="1546742435377" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/myComplier" />
+    <SUITE FILE_PATH="coverage/byks$SLR.coverage" NAME="SLR Coverage Results" MODIFIED="1546742401079" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/myComplier" />
     <SUITE FILE_PATH="coverage/byks$set_productions.coverage" NAME="set_productions Coverage Results" MODIFIED="1546562359456" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CompilerFront" />
     <SUITE FILE_PATH="coverage/byks$Test.coverage" NAME="Test Coverage Results" MODIFIED="1546487352415" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lex" />
     <SUITE FILE_PATH="coverage/byks$compiler.coverage" NAME="compiler Coverage Results" MODIFIED="1546562381290" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CompilerFront" />
-    <SUITE FILE_PATH="coverage/byks$front_end.coverage" NAME="front_end Coverage Results" MODIFIED="1546574116326" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CompilerFront" />
+    <SUITE FILE_PATH="coverage/byks$front_end.coverage" NAME="front_end Coverage Results" MODIFIED="1546590081227" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CompilerFront" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/myComplier/myCompiler.py">
+        <entry file="file://$PROJECT_DIR$/myComplier/mySet_productions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/myComplier/input.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="3" column="13" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/myComplier/myFront_end.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="46" column="25" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="25" />
-              <folding>
-                <element signature="e#0#34#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="644">
+              <caret line="125" column="18" selection-start-line="125" selection-start-column="18" selection-end-line="125" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/myComplier/mySet_productions.py">
+        <entry file="file://$PROJECT_DIR$/myComplier/myCompiler.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
-              <caret line="77" column="42" selection-start-line="77" selection-start-column="42" selection-end-line="77" selection-end-column="42" />
+            <state relative-caret-position="527">
+              <caret line="441" column="35" selection-start-line="441" selection-start-column="35" selection-end-line="441" selection-end-column="35" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -70,7 +66,20 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>analyzer.analyse</find>
+      <find>fail1</find>
+      <find>num</find>
+      <find>siyuanshi_list</find>
+      <find>exp</find>
+      <find>print</find>
     </findStrings>
+    <replaceStrings>
+      <replace>exp1</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="PATH_TO_GIT" value="D:\GitStack\git\cmd\git.exe" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -80,28 +89,32 @@
         <option value="$PROJECT_DIR$/CompilerFront/test.txt" />
         <option value="$PROJECT_DIR$/CompilerFront/front_end.py" />
         <option value="$PROJECT_DIR$/CompilerFront/set_productions.py" />
-        <option value="$PROJECT_DIR$/CompilerFront/compiler.py" />
         <option value="$PROJECT_DIR$/myComplier.py" />
         <option value="$PROJECT_DIR$/myComplier/productions.txt" />
-        <option value="$PROJECT_DIR$/myComplier/myFront_end.py" />
-        <option value="$PROJECT_DIR$/myComplier/myCompiler.py" />
+        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/myComplier/input.txt" />
+        <option value="$PROJECT_DIR$/myComplier/temp.txt" />
+        <option value="$PROJECT_DIR$/CompilerFront/compiler.py" />
+        <option value="$PROJECT_DIR$/myComplier/input1.txt" />
+        <option value="$PROJECT_DIR$/myComplier/myFront_end.py" />
+        <option value="$PROJECT_DIR$/myComplier/SLR.py" />
         <option value="$PROJECT_DIR$/myComplier/mySet_productions.py" />
+        <option value="$PROJECT_DIR$/myComplier/myCompiler.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="2103" />
-    <option name="y" value="-18" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="2127" />
+    <option name="y" value="-16" />
     <option name="width" value="1400" />
     <option name="height" value="824" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -123,13 +136,15 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="D:/GitStack/git/cmd/git.exe" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Python" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -148,8 +163,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.myFront_end">
-    <configuration name="compiler" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.myCompiler">
+    <configuration name="SLR" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="byks" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -157,12 +172,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/CompilerFront" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/myComplier" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CompilerFront/compiler.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/myComplier/SLR.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -185,6 +200,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CompilerFront/front_end.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="myCompiler" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="byks" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/myComplier" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/myComplier/myCompiler.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -237,35 +274,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="set_productions" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="byks" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/CompilerFront" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CompilerFront/set_productions.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.myFront_end" />
+        <item itemvalue="Python.myCompiler" />
         <item itemvalue="Python.mySet_productions" />
+        <item itemvalue="Python.myFront_end" />
+        <item itemvalue="Python.SLR" />
         <item itemvalue="Python.front_end" />
-        <item itemvalue="Python.compiler" />
-        <item itemvalue="Python.set_productions" />
       </list>
     </recent_temporary>
   </component>
@@ -281,24 +296,24 @@
       <updated>1546418266379</updated>
       <workItem from="1546418279494" duration="1537000" />
       <workItem from="1546487282181" duration="1055000" />
-      <workItem from="1546561155830" duration="10120000" />
+      <workItem from="1546561155830" duration="14711000" />
+      <workItem from="1546738201098" duration="7500000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12712000" />
+    <option name="totallyTimeSpent" value="24803000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15138593" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15298508" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.30444205" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.29934925" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3340564" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -319,47 +334,12 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/zitai/assign.two">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zitai/assign.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CompilerFront/test.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zitai/SLRAnalyzer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="702">
-          <caret line="460" selection-start-line="460" selection-end-line="463" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lex/Test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="659">
-          <caret line="73" column="44" selection-start-line="73" selection-start-column="38" selection-end-line="73" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zitai/assign.four">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/zitai/assign.two" />
+    <entry file="file://$PROJECT_DIR$/zitai/assign.txt" />
+    <entry file="file://$PROJECT_DIR$/CompilerFront/test.txt" />
+    <entry file="file://$PROJECT_DIR$/zitai/SLRAnalyzer.py" />
+    <entry file="file://$PROJECT_DIR$/lex/Test.py" />
+    <entry file="file://$PROJECT_DIR$/zitai/assign.four" />
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/json/decoder.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="356">
@@ -381,93 +361,140 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CompilerFront/temp.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="20" selection-start-column="17" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CompilerFront/productions.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/myComplier.py">
+    <entry file="file://$PROJECT_DIR$/myComplier.py" />
+    <entry file="file://$PROJECT_DIR$/myComplier/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/myComplier/__init__.py">
+    <entry file="file://$PROJECT_DIR$/myComplier/front_end.py" />
+    <entry file="file://$PROJECT_DIR$/myComplier/compiler.py" />
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="76">
+            <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CompilerFront/input.two">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CompilerFront/input.four">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/CompilerFront/compiler.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="287" column="13" selection-start-line="287" selection-start-column="13" selection-end-line="287" selection-end-column="13" />
+        <state relative-caret-position="8151">
+          <caret line="431" column="48" selection-start-line="431" selection-start-column="48" selection-end-line="431" selection-end-column="48" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myComplier/front_end.py">
+    <entry file="file://$PROJECT_DIR$/CompilerFront/input.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="323">
+          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myComplier/compiler.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/CompilerFront/front_end.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
+        <state relative-caret-position="1026">
           <caret line="58" column="40" selection-start-line="58" selection-start-column="40" selection-end-line="58" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CompilerFront/input.txt">
+    <entry file="file://$PROJECT_DIR$/CompilerFront/temp.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myComplier/productions.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="3" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myComplier/myCompiler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="432">
+          <caret line="59" column="24" selection-start-line="59" selection-start-column="24" selection-end-line="59" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/myComplier/input.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="13" />
+        <state>
+          <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/myComplier/temp.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="33" column="9" lean-forward="true" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myComplier/input1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myComplier/assign.four">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myComplier/assign.two">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myComplier/input.two">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myComplier/input.four">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myComplier/SLR.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="343" column="16" selection-start-line="342" selection-start-column="16" selection-end-line="343" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myComplier/input1.four">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/myComplier/myFront_end.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="46" column="25" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-          </folding>
+        <state>
+          <caret line="4" column="25" lean-forward="true" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myComplier/productions.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/myComplier/mySet_productions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="77" column="42" selection-start-line="77" selection-start-column="42" selection-end-line="77" selection-end-column="42" />
+        <state relative-caret-position="644">
+          <caret line="125" column="18" selection-start-line="125" selection-start-column="18" selection-end-line="125" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myComplier/myCompiler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="441" column="35" selection-start-line="441" selection-start-column="35" selection-end-line="441" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

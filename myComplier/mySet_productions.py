@@ -59,7 +59,7 @@ productions = {
         ['condecl3']
     ],
     'condecl3': [
-        [';'],
+        ['const1',';'],
     ],
     'const1': [
         ['id',':=' ,'integer'],
@@ -96,31 +96,37 @@ productions = {
         ['end'],
     ],
     'statement': [
-        ['id',':=','exp'],
+        ['id',':=','exp1'],
         ['if','lexp','then','statement'],
         ['if','lexp','then','statement','else','statement'],
         ['while','lexp','do','statement'],
         ['call','id'],
         ['read','id'],
-        ['write','exp']
+        ['write','exp1']
     ],
     'lexp':[
-        ['exp', '<', 'exp'],
-        ['exp', '>', 'exp'],
-        ['exp', '<=', 'exp'],
-        ['exp', '>=', 'exp'],
-        ['exp', '==', 'exp'],
-        ['exp', '!=', 'exp'],
+        ['exp1', '<', 'exp1'],
+        ['exp1', '>', 'exp1'],
+        ['exp1', '<=', 'exp1'],
+        ['exp1', '>=', 'exp1'],
+        ['exp1', '==', 'exp1'],
+        ['exp1', '!=', 'exp1'],
     ],
-    'exp': [
-        ['exp', '+', 'exp'],
-        ['exp', '-', 'exp'],
-        ['exp', '*', 'exp'],
-        ['exp', '/', 'exp'],
-        ['(', 'lexp', ')'],
+    'exp1': [
+        ['exp1', '+', 'exp2'],
+        ['exp1', '-', 'exp2'],
+        ['exp2']
+    ],
+    'exp2':[
+        ['exp2','*','exp3'],
+        ['exp2','/','exp3'],
+        ['exp3']
+    ],
+    'exp3':[
+        ['(','exp1',')'],
         ['integer', ],
         ['id', ],
-    ], 
+    ]
 }
 start = 'prog'
 myCompiler.write_productions_to_file(start, productions)

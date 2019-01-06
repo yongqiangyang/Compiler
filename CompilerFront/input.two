@@ -5,8 +5,7 @@ int int
 ] ]
 i id
 ; ;
-int int
-j id
+intj id
 = =
 1 num
 , ,
@@ -18,8 +17,7 @@ m id
 = =
 mm id
 ; ;
-int int
-k id
+intk id
 ; ;
 if if
 ( (
@@ -31,8 +29,7 @@ i id
 1 num
 ; ;
 } }
-else else
-a id
+elseelsea id
 = =
 1 num
 ; ;

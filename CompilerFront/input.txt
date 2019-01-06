@@ -6,7 +6,7 @@
        i = 1;
    }
    else
-       a = 1;
+      elsea = 1;
 
    int[10] ii;;
 
