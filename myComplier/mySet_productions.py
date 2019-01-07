@@ -48,8 +48,8 @@ productions = {
     'block': [
         ['body1'],
         ['condecl1','body1' ],
-        ['condecl1','vardecl1','body1'],
-        ['condecl1','vardecl1','proc1','body1'],
+        ['condecl1','vardecl','body1'],
+        ['condecl1','vardecl','proc1','body1'],
     ],
     'condecl1': [
         ['const','condecl2'],
@@ -64,15 +64,10 @@ productions = {
     'const1': [
         ['id',':=' ,'integer'],
     ],
-    'vardecl1': [
-        ['var','vardecl2'],
-    ],
-    'vardecl2': [
-        ['id','vardecl3'],
-        ['id',',','vardecl2'],
-    ],
-    'vardecl3': [
-        [';'],
+    'vardecl': [
+        ['var','id',';'],
+        ['var','id',',','id',';'],
+        ['var','id',',','id',',','id',';'],
     ],
     'proc1': [
         ['procedure','id','(','proc2',')','proc3' ],
@@ -93,16 +88,28 @@ productions = {
         ['statement',';','body2'],
     ],
     'body3': [
-        ['end'],
+        ['statement','end'],
     ],
     'statement': [
+        ['if','lexp','then','M1','statement'],
+        ['if','lexp','then','M1','statement','N','else','M2','statement'],
+        ['while','M1','lexp','do','M2','statement'],
+        ['call','id','(','exp1',')'],
+        ['call','id','(','exp1',',','exp1',')'],
+        ['call','id','(','exp1',',','exp1',',','exp1',')'],
         ['id',':=','exp1'],
-        ['if','lexp','then','statement'],
-        ['if','lexp','then','statement','else','statement'],
-        ['while','lexp','do','statement'],
-        ['call','id'],
-        ['read','id'],
-        ['write','exp1']
+        ['read','(','id',')'],
+        ['write','(','exp1',')'],
+        ['body1']
+    ],
+    'M1':[
+        [':']
+    ],
+    'M2':[
+        [':']
+    ],
+    'N':[
+        [':']
     ],
     'lexp':[
         ['exp1', '<', 'exp1'],
@@ -111,6 +118,7 @@ productions = {
         ['exp1', '>=', 'exp1'],
         ['exp1', '==', 'exp1'],
         ['exp1', '!=', 'exp1'],
+        ['exp1']
     ],
     'exp1': [
         ['exp1', '+', 'exp2'],

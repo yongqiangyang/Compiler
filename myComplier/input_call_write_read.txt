@@ -1,0 +1,9 @@
+program myProgram;
+
+    begin
+        call f(s);
+        call f(sda+dsa,asd);
+        call f(a,b,(asda+sa));
+        read (das);
+        write (ds+sd)
+    end

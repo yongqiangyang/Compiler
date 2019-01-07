@@ -1,0 +1,16 @@
+program program
+myProgram id
+; ;
+begin begin
+if if
+d id
+< <
+d id
+then then
+: :
+call call
+f id
+( (
+s id
+) )
+end end

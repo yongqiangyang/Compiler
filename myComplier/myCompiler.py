@@ -387,8 +387,16 @@ class Compiler:
         sign_stack = [self.sharp, ]
         # 初始化语义分析的四元式列表、分析栈
         siyuanshi_list = []
+        siyuanshi_num=0
         temp_stack = []
         temp_index = 0
+        lexp_truelist = []
+        lexp_falselist = []
+        M1_quad=[]
+        M2_quad=[]
+        N_nextlist=[]
+        S_nextlist=[]
+        temp_while=0
         # 不停分析直到接受
         while self.analyse_table[status_stack[-1]][self.tag_list[string_index]][0] != self.acc:
             # 如果不是r，则为s
@@ -400,8 +408,6 @@ class Compiler:
                     temp_stack.append(self.string_list[string_index])
                 elif(self.tag_list[string_index]=='integer'):
                     temp_stack.append(self.string_list[string_index])
-                elif(self.tag_list[string_index]=='<'):
-                    temp_stack.append(self.tag_list[string_index])
 
                 # advance
                 string_index += 1
@@ -417,7 +423,8 @@ class Compiler:
                     one = temp_stack[-2] if type(temp_stack[-2]) == str else 'temp%d' % temp_stack[-2]
                     two = temp_stack[-1] if type(temp_stack[-1]) == str else 'temp%d' % temp_stack[-1]
                     result = 'temp%d' % temp_index
-                    siyuanshi_list.append((op, one, two, result))
+                    siyuanshi_list.append([siyuanshi_num,op, one, two, result])
+                    siyuanshi_num+=1
                     temp_stack.pop()
                     temp_stack.pop()
                     temp_stack.append(temp_index)
@@ -427,19 +434,195 @@ class Compiler:
                     one = temp_stack[-1] if type(temp_stack[-1]) == str else 'temp%d' % temp_stack[-1]
                     two = '_'
                     result = temp_stack[-2] if type(temp_stack[-2]) == str else 'temp%d' % temp_stack[-2]
-                    siyuanshi_list.append((op, one, two, result))
+                    siyuanshi_list.append([siyuanshi_num,op, one, two, result])
+                    siyuanshi_num+=1
+                    S_nextlist.append(siyuanshi_num)
                     temp_stack.pop()
                     temp_stack.pop()
-                elif '<' in right:
-                    op = right[1]
+                elif any([i in right for i in ['<','>','<=','>=','==','!=']]):
+                    op = 'j'+right[1]
                     one = temp_stack[-2] if type(temp_stack[-2]) == str else 'temp%d' % temp_stack[-2]
                     two = temp_stack[-1] if type(temp_stack[-1]) == str else 'temp%d' % temp_stack[-1]
-                    result = 'temp%d' % temp_index
-                    siyuanshi_list.append((op, one, two, result))
+                    result=0
+                    siyuanshi_list.append([siyuanshi_num,op, one, two, result])
+                    lexp_truelist.append(siyuanshi_num)
+                    siyuanshi_num += 1
+                    op = 'j'
+                    one ='_'
+                    two ='_'
+                    result = 0
+                    siyuanshi_list.append([siyuanshi_num, op, one, two, result])
+                    lexp_falselist.append(siyuanshi_num)
+                    siyuanshi_num+=1
                     temp_stack.pop()
                     temp_stack.pop()
-                    temp_stack.append(temp_index)
-                    temp_index += 1
+                elif 'lexp'==left and ['exp1']==right:
+                    op = 'jnz'
+                    one = temp_stack[-1] if type(temp_stack[-1]) == str else 'temp%d' % temp_stack[-1]
+                    two = '_'
+                    result = 0
+                    siyuanshi_list.append([siyuanshi_num, op, one, two, result])
+                    lexp_truelist.append(siyuanshi_num)
+                    siyuanshi_num += 1
+                    op = 'j'
+                    one = '_'
+                    two = '_'
+                    result = 0
+                    siyuanshi_list.append([siyuanshi_num, op, one, two, result])
+                    lexp_falselist.append(siyuanshi_num)
+                    siyuanshi_num += 1
+                    temp_stack.pop()
+                elif 'M1'==left and [':']==right:
+                    M1_quad.append(siyuanshi_num)
+                elif 'M2' == left and [':'] == right:
+                    M2_quad.append(siyuanshi_num)
+                elif 'N'==left and [':']==right:
+                    op = 'j'
+                    one = '_'
+                    two = '_'
+                    result = '_'
+                    siyuanshi_list.append([siyuanshi_num, op, one, two, result])
+                    N_nextlist.append(siyuanshi_num)
+                    siyuanshi_num += 1
+                elif ['if','lexp','then','M1','statement']==right:
+                    siyuanshi_list[lexp_truelist[-1]][4]=M1_quad[-1]
+                    siyuanshi_list[lexp_falselist[-1]][4]=S_nextlist[-1]
+                    lexp_truelist.pop()
+                    M1_quad.pop()
+                    lexp_falselist.pop()
+                elif ['if','lexp','then','M1','statement','N','else','M2','statement']==right:
+                    siyuanshi_list[lexp_truelist[-1]][4] = M1_quad[-1]
+                    siyuanshi_list[lexp_falselist[-1]][4] =M2_quad[-1]
+                    siyuanshi_list[N_nextlist[-1]][4] = S_nextlist[-1]
+                    lexp_truelist.pop()
+                    M1_quad.pop()
+                    M2_quad.pop()
+                    lexp_falselist.pop()
+                    N_nextlist.pop()
+                    print("在这里")
+                elif ['while','M1','lexp','do','M2','statement']==right:
+
+                    op = 'j'
+                    one = '_'
+                    two = '_'
+                    result =M1_quad[-1]
+                    siyuanshi_list.append([siyuanshi_num, op, one, two, result])
+                    siyuanshi_num+=1
+                    siyuanshi_list[lexp_truelist[-1]][4] = M2_quad[-1]
+                    siyuanshi_list[lexp_falselist[-1]][4] = S_nextlist[-1]+1
+                    S_nextlist.append(siyuanshi_num)
+                    M1_quad.pop()
+                    lexp_truelist.pop()
+                    M2_quad.pop()
+                    lexp_falselist.pop()
+                # elif 'statement' == left and ['call','id'] == right:
+                #     #
+                elif 'statement' == left and ['read','(','id',')'] == right:
+                    op = 'read'
+                    one = temp_stack[-1] if type(temp_stack[-1]) == str else 'temp%d' % temp_stack[-1]
+                    two = '_'
+                    result ='_'
+                    siyuanshi_list.append([siyuanshi_num, op, one, two, result])
+                    siyuanshi_num += 1
+                    S_nextlist.append(siyuanshi_num)
+                    temp_stack.pop()
+                elif 'statement' == left and ['write','(','exp1',')'] == right:
+                    op = 'write'
+                    one = temp_stack[-1] if type(temp_stack[-1]) == str else 'temp%d' % temp_stack[-1]
+                    two = '_'
+                    result = '_'
+                    siyuanshi_list.append([siyuanshi_num, op, one, two, result])
+                    siyuanshi_num += 1
+                    S_nextlist.append(siyuanshi_num)
+                    temp_stack.pop()
+                elif 'statement' == left and ['call','id','(','exp1',')'] == right:
+                    op = 'param'
+                    one = temp_stack[-1] if type(temp_stack[-1]) == str else 'temp%d' % temp_stack[-1]
+                    two = '_'
+                    result = '_'
+                    siyuanshi_list.append([siyuanshi_num, op, one, two, result])
+                    siyuanshi_num += 1
+                    temp_stack.pop()
+                    op = 'call'
+                    one = temp_stack[-1] if type(temp_stack[-1]) == str else 'temp%d' % temp_stack[-1]
+                    two = '_'
+                    result = '_'
+                    siyuanshi_list.append([siyuanshi_num, op, one, two, result])
+                    siyuanshi_num += 1
+                    S_nextlist.append(siyuanshi_num)
+                elif 'statement' == left and ['call','id','(','exp1',',','exp1',')'] == right:
+                    op = 'param'
+                    one = temp_stack[-1] if type(temp_stack[-1]) == str else 'temp%d' % temp_stack[-1]
+                    two = '_'
+                    result = '_'
+                    siyuanshi_list.append([siyuanshi_num, op, one, two, result])
+                    siyuanshi_num += 1
+                    temp_stack.pop()
+                    op = 'param'
+                    one = temp_stack[-1] if type(temp_stack[-1]) == str else 'temp%d' % temp_stack[-1]
+                    two = '_'
+                    result = '_'
+                    siyuanshi_list.append([siyuanshi_num, op, one, two, result])
+                    siyuanshi_num += 1
+                    temp_stack.pop()
+                    op = 'call'
+                    one = temp_stack[-1] if type(temp_stack[-1]) == str else 'temp%d' % temp_stack[-1]
+                    two = '_'
+                    result = '_'
+                    siyuanshi_list.append([siyuanshi_num, op, one, two, result])
+                    siyuanshi_num += 1
+                elif 'statement' == left and ['call','id','(','exp1',',','exp1',',','exp1',')'] == right:
+                    op = 'param'
+                    one = temp_stack[-1] if type(temp_stack[-1]) == str else 'temp%d' % temp_stack[-1]
+                    two = '_'
+                    result = '_'
+                    siyuanshi_list.append([siyuanshi_num, op, one, two, result])
+                    siyuanshi_num += 1
+                    temp_stack.pop()
+                    op = 'param'
+                    one = temp_stack[-1] if type(temp_stack[-1]) == str else 'temp%d' % temp_stack[-1]
+                    two = '_'
+                    result = '_'
+                    siyuanshi_list.append([siyuanshi_num, op, one, two, result])
+                    siyuanshi_num += 1
+                    temp_stack.pop()
+                    op = 'param'
+                    one = temp_stack[-1] if type(temp_stack[-1]) == str else 'temp%d' % temp_stack[-1]
+                    two = '_'
+                    result = '_'
+                    siyuanshi_list.append([siyuanshi_num, op, one, two, result])
+                    siyuanshi_num += 1
+                    temp_stack.pop()
+                    op = 'call'
+                    one = temp_stack[-1] if type(temp_stack[-1]) == str else 'temp%d' % temp_stack[-1]
+                    two = '_'
+                    result = '_'
+                    siyuanshi_list.append([siyuanshi_num, op, one, two, result])
+                    siyuanshi_num += 1
+                elif 'vardecl' == left and ['var','id',';'] == right:
+                    op = 'var'
+                    one = temp_stack[-1] if type(temp_stack[-1]) == str else 'temp%d' % temp_stack[-1]
+                    two = '_'
+                    result = '_'
+                    siyuanshi_list.append([siyuanshi_num, op, one, two, result])
+                    siyuanshi_num += 1
+                    temp_stack.pop()
+                elif 'vardecl' == left and ['var','id',',','id',';'] == right:
+                    op = 'var'
+                    one = temp_stack[-1] if type(temp_stack[-1]) == str else 'temp%d' % temp_stack[-1]
+                    two = '_'
+                    result = '_'
+                    siyuanshi_list.append([siyuanshi_num, op, one, two, result])
+                    siyuanshi_num += 1
+                    temp_stack.pop()
+                elif 'vardecl' == left and ['var','id',',','id',',','id',';'] == right:
+                    op = 'var'
+                    one = temp_stack[-1] if type(temp_stack[-1]) == str else 'temp%d' % temp_stack[-1]
+                    two = '_'
+                    result = '_'
+                    siyuanshi_list.append([siyuanshi_num, op, one, two, result])
+                    siyuanshi_num += 1
+                    temp_stack.pop()
                 # 语义分析结束
                 # pop(第i个产生式右部文法符号的个数)
                 for i in range(len(right)):
@@ -476,4 +659,10 @@ class Compiler:
         self.analyse_cifa() and self.analyse_yufa()
 
 analyzer1 = Compiler()
-analyzer1.analyse("input.txt")
+# analyzer1.analyse("input.txt")
+# analyzer1.analyse("input_if.txt")
+# analyzer1.analyse("input_while_do.txt")
+# analyzer1.analyse("input_if&&while.txt")
+# analyzer1.analyse("input_call_write_read.txt")
+analyzer1.analyse("input_finaly.txt")
+# analyzer1.analyse("input_proc.txt")

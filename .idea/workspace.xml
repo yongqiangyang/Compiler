@@ -1,18 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5fd6355b-9885-49ec-90a6-e8a39a197d22" name="Default Changelist" comment="">
+    <list default="true" id="5fd6355b-9885-49ec-90a6-e8a39a197d22" name="Default Changelist" comment="1-7">
+      <change afterPath="$PROJECT_DIR$/myComplier/input_call.four" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myComplier/input_call.two" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myComplier/input_call_write_read.four" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myComplier/input_call_write_read.two" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myComplier/input_call_write_read.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myComplier/input_finaly.four" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myComplier/input_finaly.two" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myComplier/input_finaly.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myComplier/input_if&amp;&amp;while.four" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myComplier/input_if&amp;&amp;while.two" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myComplier/input_if&amp;&amp;while.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myComplier/input_if.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myComplier/input_proc.four" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myComplier/input_proc.two" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myComplier/input_proc.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myComplier/input_while_do.four" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myComplier/input_while_do.two" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myComplier/input_while_do.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CompilerFront/input.two" beforeDir="false" afterPath="$PROJECT_DIR$/CompilerFront/input.two" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CompilerFront/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CompilerFront/input.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CompilerFront/temp.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CompilerFront/temp.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myComplier/assign.four" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myComplier/assign.two" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myComplier/assign.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myComplier/input.four" beforeDir="false" afterPath="$PROJECT_DIR$/myComplier/input.four" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myComplier/input.two" beforeDir="false" afterPath="$PROJECT_DIR$/myComplier/input.two" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myComplier/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/myComplier/input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myComplier/input1.four" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myComplier/input1.two" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myComplier/input1.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/myComplier/myCompiler.py" beforeDir="false" afterPath="$PROJECT_DIR$/myComplier/myCompiler.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myComplier/mySet_productions.py" beforeDir="false" afterPath="$PROJECT_DIR$/myComplier/mySet_productions.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myComplier/productions.txt" beforeDir="false" afterPath="$PROJECT_DIR$/myComplier/productions.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myComplier/temp.txt" beforeDir="false" afterPath="$PROJECT_DIR$/myComplier/temp.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,9 +41,9 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/byks$mySet_productions.coverage" NAME="mySet_productions Coverage Results" MODIFIED="1546745892906" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/myComplier" />
+    <SUITE FILE_PATH="coverage/byks$mySet_productions.coverage" NAME="mySet_productions Coverage Results" MODIFIED="1546831277303" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/myComplier" />
     <SUITE FILE_PATH="coverage/byks$SLRAnalyzer.coverage" NAME="SLRAnalyzer Coverage Results" MODIFIED="1546487597350" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zitai" />
-    <SUITE FILE_PATH="coverage/byks$myCompiler.coverage" NAME="myCompiler Coverage Results" MODIFIED="1546746558780" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/myComplier" />
+    <SUITE FILE_PATH="coverage/byks$myCompiler.coverage" NAME="myCompiler Coverage Results" MODIFIED="1546830720078" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/myComplier" />
     <SUITE FILE_PATH="coverage/byks$myFront_end.coverage" NAME="myFront_end Coverage Results" MODIFIED="1546742435377" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/myComplier" />
     <SUITE FILE_PATH="coverage/byks$SLR.coverage" NAME="SLR Coverage Results" MODIFIED="1546742401079" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/myComplier" />
     <SUITE FILE_PATH="coverage/byks$set_productions.coverage" NAME="set_productions Coverage Results" MODIFIED="1546562359456" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CompilerFront" />
@@ -36,8 +56,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/myComplier/mySet_productions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="644">
-              <caret line="125" column="18" selection-start-line="125" selection-start-column="18" selection-end-line="125" selection-end-column="18" />
+            <state relative-caret-position="191">
+              <caret line="50" column="28" selection-start-line="50" selection-start-column="21" selection-end-line="50" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -45,11 +65,29 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/myComplier/myCompiler.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="441" column="35" selection-start-line="441" selection-start-column="35" selection-end-line="441" selection-end-column="35" />
+            <state relative-caret-position="150">
+              <caret line="518" column="23" lean-forward="true" selection-start-line="518" selection-start-column="23" selection-end-line="518" selection-end-column="23" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myComplier/input_proc.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="14" column="11" lean-forward="true" selection-start-line="3" selection-start-column="8" selection-end-line="14" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myComplier/input_finaly.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="6" column="5" lean-forward="true" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -71,6 +109,8 @@
       <find>siyuanshi_list</find>
       <find>exp</find>
       <find>print</find>
+      <find>temp_num0</find>
+      <find>temp_num2</find>
     </findStrings>
     <replaceStrings>
       <replace>exp1</replace>
@@ -92,22 +132,28 @@
         <option value="$PROJECT_DIR$/myComplier.py" />
         <option value="$PROJECT_DIR$/myComplier/productions.txt" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/myComplier/input.txt" />
         <option value="$PROJECT_DIR$/myComplier/temp.txt" />
         <option value="$PROJECT_DIR$/CompilerFront/compiler.py" />
-        <option value="$PROJECT_DIR$/myComplier/input1.txt" />
         <option value="$PROJECT_DIR$/myComplier/myFront_end.py" />
         <option value="$PROJECT_DIR$/myComplier/SLR.py" />
+        <option value="$PROJECT_DIR$/myComplier/input1.txt" />
+        <option value="$PROJECT_DIR$/myComplier/input_while_do.txt" />
+        <option value="$PROJECT_DIR$/myComplier/input_if&amp;&amp;while.txt" />
+        <option value="$PROJECT_DIR$/myComplier/input.txt" />
+        <option value="$PROJECT_DIR$/myComplier/input_call.txt" />
+        <option value="$PROJECT_DIR$/myComplier/input_call_write_read.txt" />
         <option value="$PROJECT_DIR$/myComplier/mySet_productions.py" />
+        <option value="$PROJECT_DIR$/myComplier/input_proc.txt" />
+        <option value="$PROJECT_DIR$/myComplier/input_finaly.txt" />
         <option value="$PROJECT_DIR$/myComplier/myCompiler.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="2127" />
-    <option name="y" value="-16" />
-    <option name="width" value="1400" />
-    <option name="height" value="824" />
+    <option name="x" value="67" />
+    <option name="y" value="-10" />
+    <option name="width" value="1860" />
+    <option name="height" value="1099" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -115,6 +161,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -125,18 +172,12 @@
             <path>
               <item name="byks" type="b2602c69:ProjectViewProjectNode" />
               <item name="byks" type="462c0819:PsiDirectoryNode" />
-              <item name="CompilerFront" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="byks" type="b2602c69:ProjectViewProjectNode" />
-              <item name="byks" type="462c0819:PsiDirectoryNode" />
               <item name="myComplier" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -163,7 +204,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.myCompiler">
+  <component name="RunManager" selected="Python.mySet_productions">
     <configuration name="SLR" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="byks" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -276,8 +317,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.myCompiler" />
         <item itemvalue="Python.mySet_productions" />
+        <item itemvalue="Python.myCompiler" />
         <item itemvalue="Python.myFront_end" />
         <item itemvalue="Python.SLR" />
         <item itemvalue="Python.front_end" />
@@ -298,27 +339,56 @@
       <workItem from="1546487282181" duration="1055000" />
       <workItem from="1546561155830" duration="14711000" />
       <workItem from="1546738201098" duration="7500000" />
+      <workItem from="1546748635032" duration="6966000" />
+      <workItem from="1546759384753" duration="2716000" />
+      <workItem from="1546764313715" duration="957000" />
+      <workItem from="1546818889505" duration="12498000" />
     </task>
+    <task id="LOCAL-00001" summary="执行这个程序">
+      <created>1546748698386</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1546748698386</updated>
+    </task>
+    <task id="LOCAL-00002" summary="1-6">
+      <created>1546748870690</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1546748870690</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24803000" />
+    <option name="totallyTimeSpent" value="47940000" />
+  </component>
+  <component name="TodoView" selected-index="4">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="55" y="-7" width="1488" height="878" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15298508" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21678321" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.29934925" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3340564" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.18364611" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.20241287" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info active="true" anchor="bottom" id="TODO" order="6" visible="true" weight="0.3297587" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.03253796" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="11" />
@@ -332,6 +402,22 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="执行这个程序" />
+    <MESSAGE value="1-6" />
+    <MESSAGE value="1-7" />
+    <option name="LAST_COMMIT_MESSAGE" value="1-7" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/zitai/assign.two" />
@@ -417,24 +503,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myComplier/input.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/myComplier/temp.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="197">
           <caret line="33" column="9" lean-forward="true" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myComplier/input1.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -446,12 +518,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/myComplier/assign.two">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myComplier/input.two">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myComplier/input.four">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/myComplier/SLR.py">
@@ -481,17 +547,92 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/myComplier/input.two">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myComplier/input1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myComplier/input_while_do">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myComplier/input_while_do.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="12" lean-forward="true" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myComplier/input.four">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myComplier/input_if.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="3" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myComplier/input_call.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myComplier/input_if&amp;&amp;while.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="45" lean-forward="true" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myComplier/input_call_write_read.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myComplier/input.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="41" selection-end-line="6" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/myComplier/mySet_productions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="644">
-          <caret line="125" column="18" selection-start-line="125" selection-start-column="18" selection-end-line="125" selection-end-column="18" />
+        <state relative-caret-position="191">
+          <caret line="50" column="28" selection-start-line="50" selection-start-column="21" selection-end-line="50" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myComplier/input_finaly.four">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myComplier/input_proc.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="11" lean-forward="true" selection-start-line="3" selection-start-column="8" selection-end-line="14" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myComplier/input_finaly.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="5" lean-forward="true" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/myComplier/myCompiler.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="441" column="35" selection-start-line="441" selection-start-column="35" selection-end-line="441" selection-end-column="35" />
+        <state relative-caret-position="150">
+          <caret line="518" column="23" lean-forward="true" selection-start-line="518" selection-start-column="23" selection-end-line="518" selection-end-column="23" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>

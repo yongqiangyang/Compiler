@@ -1,7 +1,0 @@
-* i x1 temp0
-- * temp0 temp1
-* i x2 temp2
-+ * temp2 temp3
-/ temp3 ) temp4
-+ a4 temp4 temp5
-= temp5 _ i
