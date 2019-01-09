@@ -49,7 +49,10 @@ productions = {
         ['body1'],
         ['condecl1','body1' ],
         ['condecl1','vardecl','body1'],
+        ['vardecl','body1'],
         ['condecl1','vardecl','proc1','body1'],
+        ['condecl1','proc1','body1'],
+        ['proc1','body1'],
     ],
     'condecl1': [
         ['const','condecl2'],
@@ -70,7 +73,11 @@ productions = {
         ['var','id',',','id',',','id',';'],
     ],
     'proc1': [
-        ['procedure','id','(','proc2',')','proc3' ],
+        ['procedure','id','(','proc2',')','M3','proc3' ],
+        ['procedure','id','(',')','M3','proc3' ]
+    ],
+    'M3':[
+        [';']
     ],
     'proc2': [
         ['id'],
@@ -94,6 +101,7 @@ productions = {
         ['if','lexp','then','M1','statement'],
         ['if','lexp','then','M1','statement','N','else','M2','statement'],
         ['while','M1','lexp','do','M2','statement'],
+        ['call','id','(',')'],
         ['call','id','(','exp1',')'],
         ['call','id','(','exp1',',','exp1',')'],
         ['call','id','(','exp1',',','exp1',',','exp1',')'],

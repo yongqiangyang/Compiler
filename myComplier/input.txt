@@ -1,7 +1,0 @@
-program myProgram;
-    const num:=1;
-    var num1,num2,num3,num4,num5,num6,d,f;
-    begin
-    	d:=(num1+num2)*num3+(asfsf+dsfsaf);
-    	f:=num4+num5*num6
-   	end

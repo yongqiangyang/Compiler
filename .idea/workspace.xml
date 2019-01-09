@@ -2,37 +2,44 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5fd6355b-9885-49ec-90a6-e8a39a197d22" name="Default Changelist" comment="1-7">
-      <change afterPath="$PROJECT_DIR$/myComplier/input_call.four" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myComplier/input_call.two" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myComplier/input_call_write_read.four" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myComplier/input_call_write_read.two" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myComplier/input_call_write_read.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myComplier/input_finaly.four" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myComplier/input_finaly.two" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myComplier/input_finaly.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myComplier/input_if&amp;&amp;while.four" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myComplier/input_if&amp;&amp;while.two" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myComplier/input_if&amp;&amp;while.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myComplier/input_if.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myComplier/input_proc.four" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myComplier/input_proc.two" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myComplier/input_proc.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myComplier/input_while_do.four" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myComplier/input_while_do.two" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myComplier/input_while_do.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myComplier/assign.four" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myComplier/assign.two" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myComplier/assign.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myComplier/input.four" beforeDir="false" afterPath="$PROJECT_DIR$/myComplier/input.four" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myComplier/input.two" beforeDir="false" afterPath="$PROJECT_DIR$/myComplier/input.two" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myComplier/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/myComplier/input.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myComplier/input1.four" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myComplier/input1.two" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myComplier/input1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myComplier/myCompiler.py" beforeDir="false" afterPath="$PROJECT_DIR$/myComplier/myCompiler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CompilerFront/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CompilerFront/compiler.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CompilerFront/front_end.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CompilerFront/input.four" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CompilerFront/input.two" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CompilerFront/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CompilerFront/productions.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CompilerFront/set_productions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CompilerFront/temp.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myComplier/SLR.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myComplier/input.four" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myComplier/input.two" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myComplier/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myComplier/input_call.four" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myComplier/input_call.two" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myComplier/input_call_write_read.four" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myComplier/input_call_write_read.two" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myComplier/input_call_write_read.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myComplier/input_finaly.four" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myComplier/input_finaly.two" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myComplier/input_finaly.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myComplier/input_if&amp;&amp;while.four" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myComplier/input_if&amp;&amp;while.two" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myComplier/input_if&amp;&amp;while.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myComplier/input_if.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myComplier/input_proc.four" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myComplier/input_proc.two" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myComplier/input_proc.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myComplier/input_while_do.four" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myComplier/input_while_do.two" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myComplier/input_while_do.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myComplier/myCompiler.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myComplier/myFront_end.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/myComplier/mySet_productions.py" beforeDir="false" afterPath="$PROJECT_DIR$/myComplier/mySet_productions.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myComplier/productions.txt" beforeDir="false" afterPath="$PROJECT_DIR$/myComplier/productions.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myComplier/temp.txt" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,53 +48,70 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/byks$mySet_productions.coverage" NAME="mySet_productions Coverage Results" MODIFIED="1546831277303" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/myComplier" />
+    <SUITE FILE_PATH="coverage/byks$pprint.coverage" NAME="pprint Coverage Results" MODIFIED="1546951070336" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib" />
     <SUITE FILE_PATH="coverage/byks$SLRAnalyzer.coverage" NAME="SLRAnalyzer Coverage Results" MODIFIED="1546487597350" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zitai" />
-    <SUITE FILE_PATH="coverage/byks$myCompiler.coverage" NAME="myCompiler Coverage Results" MODIFIED="1546830720078" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/myComplier" />
+    <SUITE FILE_PATH="coverage/byks$42D.coverage" NAME="42D Coverage Results" MODIFIED="1546915571546" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/myComplier" />
+    <SUITE FILE_PATH="coverage/byks$myCompiler.coverage" NAME="myCompiler Coverage Results" MODIFIED="1546940376232" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/myComplier" />
+    <SUITE FILE_PATH="coverage/byks$fourToAss.coverage" NAME="fourToAss Coverage Results" MODIFIED="1546946239537" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/myComplier" />
+    <SUITE FILE_PATH="coverage/byks$front_end.coverage" NAME="front_end Coverage Results" MODIFIED="1546590081227" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CompilerFront" />
+    <SUITE FILE_PATH="coverage/byks$42D1.coverage" NAME="42D1 Coverage Results" MODIFIED="1546942362738" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/myComplier" />
+    <SUITE FILE_PATH="coverage/byks$mySet_productions.coverage" NAME="mySet_productions Coverage Results" MODIFIED="1546936807594" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/myComplier" />
     <SUITE FILE_PATH="coverage/byks$myFront_end.coverage" NAME="myFront_end Coverage Results" MODIFIED="1546742435377" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/myComplier" />
     <SUITE FILE_PATH="coverage/byks$SLR.coverage" NAME="SLR Coverage Results" MODIFIED="1546742401079" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/myComplier" />
     <SUITE FILE_PATH="coverage/byks$set_productions.coverage" NAME="set_productions Coverage Results" MODIFIED="1546562359456" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CompilerFront" />
     <SUITE FILE_PATH="coverage/byks$Test.coverage" NAME="Test Coverage Results" MODIFIED="1546487352415" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lex" />
     <SUITE FILE_PATH="coverage/byks$compiler.coverage" NAME="compiler Coverage Results" MODIFIED="1546562381290" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CompilerFront" />
-    <SUITE FILE_PATH="coverage/byks$front_end.coverage" NAME="front_end Coverage Results" MODIFIED="1546590081227" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CompilerFront" />
+    <SUITE FILE_PATH="coverage/byks$ExeAssembly.coverage" NAME="ExeAssembly Coverage Results" MODIFIED="1546993289112" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/myComplier" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/myComplier/mySet_productions.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="50" column="28" selection-start-line="50" selection-start-column="21" selection-end-line="50" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/myComplier/myCompiler.py">
+        <entry file="file://$PROJECT_DIR$/myComplier/ExeAssembly.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="518" column="23" lean-forward="true" selection-start-line="518" selection-start-column="23" selection-end-line="518" selection-end-column="23" />
+            <state relative-caret-position="483">
+              <caret line="358" column="19" lean-forward="true" selection-start-line="335" selection-start-column="4" selection-end-line="358" selection-end-column="19" />
               <folding>
-                <element signature="e#0#11#0" expanded="true" />
+                <element signature="e#0#25#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/myComplier/input_proc.txt">
+        <entry file="file://$PROJECT_DIR$/myComplier/test5.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="14" column="11" lean-forward="true" selection-start-line="3" selection-start-column="8" selection-end-line="14" selection-end-column="11" />
+            <state relative-caret-position="171">
+              <caret line="9" column="9" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/myComplier/input_finaly.txt">
+        <entry file="file://$PROJECT_DIR$/myComplier/Complier.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="6" column="5" lean-forward="true" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+            <state relative-caret-position="502">
+              <caret line="533" column="40" lean-forward="true" selection-start-line="519" selection-start-column="16" selection-end-line="533" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myComplier/mySet_productions.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="55" column="6" lean-forward="true" selection-start-line="43" selection-end-line="55" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myComplier/fourToAss.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="279">
+              <caret line="113" column="30" selection-start-line="113" selection-start-column="30" selection-end-line="113" selection-end-column="30" />
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -103,17 +127,41 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>analyzer.analyse</find>
-      <find>fail1</find>
-      <find>num</find>
-      <find>siyuanshi_list</find>
-      <find>exp</find>
-      <find>print</find>
-      <find>temp_num0</find>
-      <find>temp_num2</find>
+      <find>outputSTACK</find>
+      <find>jmp_nam</find>
+      <find>copy</find>
+      <find>evaluation</find>
+      <find>stack</find>
+      <find>jpc</find>
+      <find>insert_jmpname</find>
+      <find>fourEle</find>
+      <find>add</find>
+      <find>element</find>
+      <find>JMP</find>
+      <find>temp_stack</find>
+      <find>jmp</find>
+      <find>MOV</find>
+      <find>jcc</find>
+      <find>re</find>
+      <find>write</find>
+      <find>analyzer1</find>
+      <find>push</find>
+      <find>mov</find>
+      <find>ETX</find>
+      <find>CALL</find>
+      <find>read</find>
+      <find>RED</find>
+      <find>proc</find>
+      <find>declaration</find>
+      <find>RET</find>
+      <find>sto</find>
+      <find>s</find>
+      <find>call</find>
     </findStrings>
     <replaceStrings>
       <replace>exp1</replace>
+      <replace>EIX</replace>
+      <replace>analyzer</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -137,31 +185,55 @@
         <option value="$PROJECT_DIR$/myComplier/myFront_end.py" />
         <option value="$PROJECT_DIR$/myComplier/SLR.py" />
         <option value="$PROJECT_DIR$/myComplier/input1.txt" />
-        <option value="$PROJECT_DIR$/myComplier/input_while_do.txt" />
-        <option value="$PROJECT_DIR$/myComplier/input_if&amp;&amp;while.txt" />
-        <option value="$PROJECT_DIR$/myComplier/input.txt" />
-        <option value="$PROJECT_DIR$/myComplier/input_call.txt" />
         <option value="$PROJECT_DIR$/myComplier/input_call_write_read.txt" />
-        <option value="$PROJECT_DIR$/myComplier/mySet_productions.py" />
         <option value="$PROJECT_DIR$/myComplier/input_proc.txt" />
         <option value="$PROJECT_DIR$/myComplier/input_finaly.txt" />
+        <option value="$PROJECT_DIR$/myComplier/input.txt" />
+        <option value="$PROJECT_DIR$/myComplier/input.two" />
+        <option value="$PROJECT_DIR$/myComplier/input_if.txt" />
+        <option value="$PROJECT_DIR$/myComplier/input.four" />
+        <option value="$PROJECT_DIR$/myComplier/input_call_write_read.four" />
+        <option value="$PROJECT_DIR$/myComplier/if_test.txt" />
+        <option value="$PROJECT_DIR$/myComplier/input_if&amp;&amp;while.four" />
+        <option value="$PROJECT_DIR$/myComplier/if_test.four" />
+        <option value="$PROJECT_DIR$/myComplier/input_output.txt" />
+        <option value="$PROJECT_DIR$/myComplier/42D.py" />
+        <option value="$PROJECT_DIR$/myComplier/if_test_output.txt" />
+        <option value="$PROJECT_DIR$/myComplier/input_while_do.txt" />
+        <option value="$PROJECT_DIR$/myComplier/input_while_do_output.txt" />
+        <option value="$PROJECT_DIR$/myComplier/input_call.four" />
+        <option value="$PROJECT_DIR$/myComplier/input_call.txt" />
+        <option value="$PROJECT_DIR$/myComplier/input_if&amp;&amp;while.txt" />
         <option value="$PROJECT_DIR$/myComplier/myCompiler.py" />
+        <option value="$PROJECT_DIR$/myComplier/input_if_midcode.txt" />
+        <option value="$PROJECT_DIR$/myComplier/input_if_output.txt" />
+        <option value="$PROJECT_DIR$/myComplier/42D1.py" />
+        <option value="$PROJECT_DIR$/myComplier/myComplier.py" />
+        <option value="$PROJECT_DIR$/myComplier/input_call_midcode.txt" />
+        <option value="$PROJECT_DIR$/myComplier/test5.four" />
+        <option value="$PROJECT_DIR$/myComplier/fourToAss.py" />
+        <option value="$PROJECT_DIR$/myComplier/test5.txt" />
+        <option value="$PROJECT_DIR$/myComplier/mySet_productions.py" />
+        <option value="$PROJECT_DIR$/../compilerDesign/compilerUi/mainWindow.py" />
+        <option value="$PROJECT_DIR$/myComplier/Complier.py" />
+        <option value="$PROJECT_DIR$/myComplier/ExeAssembly.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="67" />
-    <option name="y" value="-10" />
-    <option name="width" value="1860" />
-    <option name="height" value="1099" />
+    <option name="x" value="130" />
+    <option name="y" value="-24" />
+    <option name="width" value="1415" />
+    <option name="height" value="1100" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -178,6 +250,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -204,8 +277,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.mySet_productions">
-    <configuration name="SLR" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.ExeAssembly">
+    <configuration name="42D1" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="byks" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -218,7 +291,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/myComplier/SLR.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/myComplier/42D1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -227,7 +300,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="front_end" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="ExeAssembly" type="PythonConfigurationType" factoryName="Python">
       <module name="byks" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -235,12 +308,34 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/CompilerFront" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/myComplier" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CompilerFront/front_end.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/myComplier/ExeAssembly.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="fourToAss" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="byks" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/myComplier" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/myComplier/fourToAss.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -271,28 +366,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="myFront_end" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="byks" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/myComplier" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/myComplier/myFront_end.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="mySet_productions" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="byks" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -315,13 +388,35 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="pprint" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="byks" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/pprint.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.mySet_productions" />
+        <item itemvalue="Python.pprint" />
+        <item itemvalue="Python.fourToAss" />
+        <item itemvalue="Python.42D1" />
         <item itemvalue="Python.myCompiler" />
-        <item itemvalue="Python.myFront_end" />
-        <item itemvalue="Python.SLR" />
-        <item itemvalue="Python.front_end" />
+        <item itemvalue="Python.mySet_productions" />
       </list>
     </recent_temporary>
   </component>
@@ -342,7 +437,10 @@
       <workItem from="1546748635032" duration="6966000" />
       <workItem from="1546759384753" duration="2716000" />
       <workItem from="1546764313715" duration="957000" />
-      <workItem from="1546818889505" duration="12498000" />
+      <workItem from="1546818889505" duration="27158000" />
+      <workItem from="1546858493055" duration="10720000" />
+      <workItem from="1546906089439" duration="43749000" />
+      <workItem from="1546992386831" duration="8246000" />
     </task>
     <task id="LOCAL-00001" summary="执行这个程序">
       <created>1546748698386</created>
@@ -358,13 +456,20 @@
       <option name="project" value="LOCAL" />
       <updated>1546748870690</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="1-7">
+      <created>1546831709991</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1546831709991</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47940000" />
+    <option name="totallyTimeSpent" value="125315000" />
   </component>
-  <component name="TodoView" selected-index="4">
+  <component name="TodoView">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
     </todo-panel>
@@ -375,18 +480,17 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="55" y="-7" width="1488" height="878" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21678321" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21118881" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.18364611" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.20241287" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.04021448" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.26407507" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info active="true" anchor="bottom" id="TODO" order="6" visible="true" weight="0.3297587" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3297587" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.03253796" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
@@ -419,222 +523,182 @@
     <MESSAGE value="1-7" />
     <option name="LAST_COMMIT_MESSAGE" value="1-7" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/zitai/assign.two" />
-    <entry file="file://$PROJECT_DIR$/zitai/assign.txt" />
-    <entry file="file://$PROJECT_DIR$/CompilerFront/test.txt" />
-    <entry file="file://$PROJECT_DIR$/zitai/SLRAnalyzer.py" />
-    <entry file="file://$PROJECT_DIR$/lex/Test.py" />
-    <entry file="file://$PROJECT_DIR$/zitai/assign.four" />
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/json/decoder.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="352" selection-start-line="352" selection-end-line="352" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/myComplier/input_finaly.txt" />
     <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/-1241813148/builtins.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="352" column="4" selection-start-line="352" selection-start-column="4" selection-end-line="352" selection-end-column="4" />
+        <state relative-caret-position="97">
+          <caret line="4881" column="17" selection-start-line="4881" selection-start-column="8" selection-end-line="4881" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CompilerFront/set_productions.py">
+    <entry file="file://$PROJECT_DIR$/myComplier/if_test.two" />
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/_bootlocale.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1957">
-          <caret line="105" column="53" selection-start-line="105" selection-start-column="42" selection-end-line="105" selection-end-column="53" />
+        <state relative-caret-position="76">
+          <caret line="4" column="3" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CompilerFront/productions.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myComplier.py" />
-    <entry file="file://$PROJECT_DIR$/myComplier/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myComplier/front_end.py" />
-    <entry file="file://$PROJECT_DIR$/myComplier/compiler.py" />
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="76">
-            <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CompilerFront/input.two">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CompilerFront/input.four">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CompilerFront/compiler.py">
+    <entry file="file://$PROJECT_DIR$/myComplier/input.four" />
+    <entry file="file://$PROJECT_DIR$/myComplier/myFront_end.py" />
+    <entry file="file://$PROJECT_DIR$/myComplier/if_test.four" />
+    <entry file="file://$PROJECT_DIR$/myComplier/input_output.txt" />
+    <entry file="file://$PROJECT_DIR$/myComplier/input_proc.four" />
+    <entry file="file://$PROJECT_DIR$/myComplier/input_while_do.two" />
+    <entry file="file://$PROJECT_DIR$/myComplier/if_test_output.txt" />
+    <entry file="file://$PROJECT_DIR$/myComplier/input_while_do.four" />
+    <entry file="file://$PROJECT_DIR$/myComplier/input_while_do.txt" />
+    <entry file="file://$PROJECT_DIR$/myComplier/input_while_do_output.txt" />
+    <entry file="file://$PROJECT_DIR$/myComplier/42D.py" />
+    <entry file="file://$PROJECT_DIR$/myComplier/input_if&amp;&amp;while.two" />
+    <entry file="file://$PROJECT_DIR$/myComplier/input_if&amp;&amp;while.txt" />
+    <entry file="file://$PROJECT_DIR$/myComplier/myCompiler.py" />
+    <entry file="file://$PROJECT_DIR$/myComplier/input_if&amp;&amp;while.four" />
+    <entry file="file://$PROJECT_DIR$/myComplier/input_if_midcode.txt" />
+    <entry file="file://$PROJECT_DIR$/myComplier/input_if_output.txt" />
+    <entry file="file://$PROJECT_DIR$/myComplier/input_if.two" />
+    <entry file="file://$PROJECT_DIR$/myComplier/input_if.four" />
+    <entry file="file://$PROJECT_DIR$/myComplier/input_if.txt" />
+    <entry file="file://$PROJECT_DIR$/myComplier/42D1.py" />
+    <entry file="file://$PROJECT_DIR$/CompilerFront/front_end.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8151">
-          <caret line="431" column="48" selection-start-line="431" selection-start-column="48" selection-end-line="431" selection-end-column="48" />
+        <state relative-caret-position="1099">
+          <caret line="58" column="40" selection-start-line="58" selection-start-column="40" selection-end-line="58" selection-end-column="40" />
           <folding>
-            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#0#34#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CompilerFront/input.txt">
+    <entry file="file://$PROJECT_DIR$/myComplier/myComplier.py" />
+    <entry file="file://$PROJECT_DIR$/myComplier/input_call.four" />
+    <entry file="file://$PROJECT_DIR$/myComplier/input_call.two" />
+    <entry file="file://$PROJECT_DIR$/myComplier/input_call_output.txt" />
+    <entry file="file://$PROJECT_DIR$/myComplier/input_call.txt" />
+    <entry file="file://$PROJECT_DIR$/myComplier/input_call_midcode.txt" />
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/pprint.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+        <state relative-caret-position="166">
+          <caret line="52" column="26" lean-forward="true" selection-start-line="52" selection-start-column="26" selection-end-line="52" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CompilerFront/front_end.py">
+    <entry file="file://$PROJECT_DIR$/myComplier/input_call_writeResult.txt" />
+    <entry file="file://$PROJECT_DIR$/myComplier/input_call_outputSTACK.txt" />
+    <entry file="file://$PROJECT_DIR$/myComplier/input.txt" />
+    <entry file="file://$PROJECT_DIR$/myComplier/if_test.txt" />
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/urllib/parse.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1026">
-          <caret line="58" column="40" selection-start-line="58" selection-start-column="40" selection-end-line="58" selection-end-column="40" />
+        <state relative-caret-position="178">
+          <caret line="781" selection-start-line="781" selection-end-line="781" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CompilerFront/temp.txt">
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/codecs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="59" column="24" selection-start-line="59" selection-start-column="24" selection-end-line="59" selection-end-column="24" />
+        <state relative-caret-position="558">
+          <caret line="332" selection-start-line="332" selection-end-line="332" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myComplier/temp.txt">
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/copy.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="33" column="9" lean-forward="true" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
+        <state relative-caret-position="137">
+          <caret line="137" selection-start-line="137" selection-end-line="137" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myComplier/assign.four">
+    <entry file="file://$PROJECT_DIR$/myComplier/test5.two">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="798">
+          <caret line="42" column="4" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myComplier/test5.four">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myComplier/test5_output.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="19" column="8" lean-forward="true" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myComplier/test5_midcode.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myComplier/test5_writeResult.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret selection-end-line="7" />
+          <caret column="9" lean-forward="true" selection-start-column="9" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myComplier/assign.two">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myComplier/SLR.py">
+    <entry file="file://$PROJECT_DIR$/../compilerDesign/compilerUi/mainWindow.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="343" column="16" selection-start-line="342" selection-start-column="16" selection-end-line="343" selection-end-column="16" />
+        <state relative-caret-position="285">
+          <caret line="160" column="14" selection-start-line="160" selection-start-column="14" selection-end-line="160" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myComplier/fourToAss.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="113" column="30" selection-start-line="113" selection-start-column="30" selection-end-line="113" selection-end-column="30" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myComplier/input1.four">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myComplier/myFront_end.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="4" column="25" lean-forward="true" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myComplier/productions.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myComplier/input.two">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myComplier/input1.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myComplier/input_while_do">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myComplier/input_while_do.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="12" lean-forward="true" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myComplier/input.four">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myComplier/input_if.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="3" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myComplier/input_call.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myComplier/input_if&amp;&amp;while.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="45" lean-forward="true" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myComplier/input_call_write_read.txt">
+    <entry file="file://$PROJECT_DIR$/myComplier/test5.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myComplier/input.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="41" selection-end-line="6" selection-end-column="7" />
+          <caret line="9" column="9" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/myComplier/mySet_productions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="50" column="28" selection-start-line="50" selection-start-column="21" selection-end-line="50" selection-end-column="28" />
+        <state relative-caret-position="304">
+          <caret line="55" column="6" lean-forward="true" selection-start-line="43" selection-end-line="55" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myComplier/input_finaly.four">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myComplier/input_proc.txt">
+    <entry file="file://$PROJECT_DIR$/myComplier/Complier.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="11" lean-forward="true" selection-start-line="3" selection-start-column="8" selection-end-line="14" selection-end-column="11" />
+        <state relative-caret-position="502">
+          <caret line="533" column="40" lean-forward="true" selection-start-line="519" selection-start-column="16" selection-end-line="533" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myComplier/input_finaly.txt">
+    <entry file="file://$PROJECT_DIR$/myComplier/ExeAssembly.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="5" lean-forward="true" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myComplier/myCompiler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="518" column="23" lean-forward="true" selection-start-line="518" selection-start-column="23" selection-end-line="518" selection-end-column="23" />
+        <state relative-caret-position="483">
+          <caret line="358" column="19" lean-forward="true" selection-start-line="335" selection-start-column="4" selection-end-line="358" selection-end-column="19" />
           <folding>
-            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#0#25#0" expanded="true" />
           </folding>
         </state>
       </provider>
