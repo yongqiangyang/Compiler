@@ -1,0 +1,10 @@
+program myProgram;
+    const a:=1;
+    var c;
+    begin
+        c:=a;
+        while: c!=0
+        do:
+            c:=c-1;
+        write(c)
+   	end

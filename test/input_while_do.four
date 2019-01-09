@@ -1,0 +1,9 @@
+0 := 1 _ a
+1 var c _ _
+2 := a _ c
+3 j!= c 0 5
+4 j _ _ 8
+5 - c 1 temp0
+6 := temp0 _ c
+7 j _ _ 3
+8 write c _ _

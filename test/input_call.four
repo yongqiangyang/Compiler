@@ -1,0 +1,9 @@
+0 := 10 _ a
+1 := 1 _ b
+2 var c _ _
+3 proc p _ _
+4 + b a temp0
+5 := temp0 _ c
+6 ret _ _ _
+7 call p _ _
+8 write c _ _

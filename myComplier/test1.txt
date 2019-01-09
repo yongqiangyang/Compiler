@@ -1,0 +1,7 @@
+program myProgram;
+    const n1:=1,n2:=2;
+    var n3;
+    begin
+    	n3:=n1+n2;
+    	write (n3)
+   	end

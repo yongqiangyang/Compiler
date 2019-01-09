@@ -1,0 +1,6 @@
+0 := 1 _ n1
+1 := 2 _ n2
+2 var n3 _ _
+3 + n1 n2 temp0
+4 := temp0 _ n3
+5 write n3 _ _

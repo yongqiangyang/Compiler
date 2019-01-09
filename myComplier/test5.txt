@@ -1,0 +1,16 @@
+program abc;
+	const a:=10;
+	var   b,c;
+	procedure p();
+	    begin
+		    c:=c*b;
+		    b:=b-1
+	    end
+    begin
+        c:=1;
+	    b:=a;
+	    while: b!=0
+	    do:
+		    call p();
+	    write(c)
+    end

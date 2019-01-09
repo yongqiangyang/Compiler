@@ -1,0 +1,14 @@
+MOV [0], 1
+MOV [1], 2
+LIT 0, 0
+LIT 0, 1
+OPR 0, <=
+JPC 0, 7
+JMP 0, 13
+LIT 0, 0
+LIT 0, 1
+OPR 0, +
+STO 0, 3
+LOD 0, 3
+STO 0, 2
+WRT 0, 0

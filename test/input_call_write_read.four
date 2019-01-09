@@ -1,0 +1,14 @@
+0 param s _ _
+1 call f _ _
+2 + sda dsa temp0
+3 param asd _ _
+4 param temp0 _ _
+5 call f _ _
+6 + asda sa temp1
+7 param temp1 _ _
+8 param b _ _
+9 param a _ _
+10 call f _ _
+11 read das _ _
+12 + ds sd temp2
+13 write temp2 _ _

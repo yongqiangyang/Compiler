@@ -1,0 +1,13 @@
+program myProgram;
+    const a:=10,b:=1;
+    var c;
+    procedure p();
+        begin
+            c:=b+a
+        end
+    begin
+        begin
+            call p();
+            write(c)
+        end
+    end

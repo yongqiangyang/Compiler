@@ -1,0 +1,14 @@
+0 := 1 _ c1
+1 := 2 _ c2
+2 var v3 _ _
+3 + c1 c2 temp0
+4 := temp0 _ v1
+5 - c1 c2 temp1
+6 := temp1 _ v2
+7 j<= v1 v2 9
+8 j _ _ 11
+9 + v1 v2 temp2
+10 := temp2 _ v3
+11 write v1 _ _
+12 write v2 _ _
+13 write v3 _ _

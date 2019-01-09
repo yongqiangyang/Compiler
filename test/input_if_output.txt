@@ -1,0 +1,33 @@
+MOV EBX{Register}, 0{Immediate}
+MOV ETX{Register}, EBX{Register}
+INC 0, 6
+MOV [0]{c1}, 1{Immediate}
+MOV [1]{c2}, 2{Immediate}
+LIT 0, 0{c1}
+LIT 0, 1{c2}
+OPR 0, +
+STO 0, 5{temp0}
+STO 0, 2{v1}
+LIT 0, 0{c1}
+LIT 0, 1{c2}
+OPR 0, -
+STO 0, 5{temp1}
+STO 0, 3{v2}
+LOD 0, 2{v1}
+LOD 0, 3{v2}
+OPR 0, <=
+JPC 0, 20{QDRkTFj}
+JMP 0, 25{ilxZWHa}
+QDRkTFj:
+LOD 0, 2{v1}
+LOD 0, 3{v2}
+OPR 0, +
+STO 0, 5{temp2}
+STO 0, 4{v3}
+ilxZWHa:
+LOD 0, 2
+WRT 0, 0
+LOD 0, 3
+WRT 0, 0
+LOD 0, 4
+WRT 0, 0

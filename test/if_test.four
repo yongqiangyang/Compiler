@@ -1,0 +1,8 @@
+0 := 1 _ c1
+1 := 2 _ c2
+2 var v1 _ _
+3 j<= c1 c2 5
+4 j _ _ 7
+5 + c1 c2 temp0
+6 := temp0 _ v1
+7 write v3 _ _

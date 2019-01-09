@@ -1,0 +1,17 @@
+MOV EBX, 0
+MOV ETX, EBX
+INC 0, 3
+MOV [0], 1
+STO 0, 1
+LOD 0, 1
+PUSH 0
+OPR 0, !=
+JPC 0, 10
+JMP 0, 16
+LOD 0, 1
+PUSH 1
+OPR 0, -
+STO 0, 2
+STO 0, 1
+JMP 0, 5s
+WRT 0, 0
