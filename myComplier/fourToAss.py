@@ -748,7 +748,7 @@ class Mcode2destination:
     }
 
     def call_code(self):
-        ''''''
+        '''处理跳转函数'''
         for qwe in list(self.level_fourEle.keys()):
             #生成过程调用的初始代码
             code = '%s:\tPUSH EPX{Register}\n' % (qwe)+\
@@ -789,7 +789,7 @@ class Mcode2destination:
         pass
 
     def midoutput(self):
-        ''''''
+        '''汇编代码输出'''
         code = list(self.code)
         for element in range(len(self.code)):
             List1 = list()

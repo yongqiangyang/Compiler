@@ -10,7 +10,7 @@ from copy import deepcopy
     语义分析技术：翻译模式
 """
 #生成产生式
-#与mySet_productions.py共同使用
+#与mySet_productions.py共同使用，将产生式输出到productions.txt文件中。
 def write_productions_to_file(start, productions, path='productions.txt'):
     with open(path, 'w') as f:
         f.write(json.dumps(start) + '\n')
