@@ -473,10 +473,10 @@ class ExeAssembly:
 
 if __name__ == '__main__':
     file_name='test1'
-    file_name='test2'
-    file_name='test3'
-    file_name='test4'
-    file_name='test5'
+    # file_name='test2'
+    # file_name='test3'
+    # file_name='test4'
+    # file_name='test5'
     analyzer = Complier.Compiler()
     analyzer.analyse(file_name+'.txt')
     m2d = fourToAss.Mcode2destination(file_name)

@@ -1,9 +1,9 @@
 program myProgram;
-    const c1:=1,c2:=2;
-    var v1;
+    const c1:=1,c2:=2
+    var v1
     begin
         if c1<=c2
-    	    then:
+    	    then
     	        v3:=c1+c2;
-        write (v3)
+        write (v3);
    	end

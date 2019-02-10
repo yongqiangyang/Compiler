@@ -1,7 +1,7 @@
 program abc;
-	const a:=10;
-	var   b,c;
-	procedure p();
+	const a:=10
+	var   b,c
+	procedure p(a);
 	    begin
 		    c:=c*b;
 		    b:=b-1
@@ -9,8 +9,8 @@ program abc;
     begin
         c:=1;
 	    b:=a;
-	    while: b!=0
-	    do:
-		    call p();
+	    while b!=0
+	    do
+		    call p(a);
 	    write(c)
     end

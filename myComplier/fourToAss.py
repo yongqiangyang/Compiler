@@ -3,12 +3,14 @@ import os, sys
 import random
 import re
 
-class Mcode2destination:
-    """
+
+"""
     输入一个文件路径,进行四元式转化为目标机代码
     主要函数：
         .transform()    开始进行进行四元式到目标机代码的转化，将结果输出到"|filename|_output.txt"的文件中
-    """
+"""
+class Mcode2destination:
+
     def __init__(self, filename):
         #####################################################
         #CODE   用来存放程序代码                            #
@@ -885,3 +887,7 @@ class Mcode2destination:
         with open(self.file_name + '_output'+'.txt', 'w') as f:
             f.write(self.code_str)
         pass
+
+if __name__ == '__main__':
+    m2d =Mcode2destination('test1')
+    m2d.transform()

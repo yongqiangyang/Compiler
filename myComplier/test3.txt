@@ -1,13 +1,13 @@
 program myProgram;
-    const c1:=1,c2:=2;
-    var v1,v2,v3;
+    const c1:=1,c2:=2
+    var v1,v2,v3
     begin
         v1:=c1+c2;
         v2:=c1-c2;
     	if v1<=v2
-    	    then:
+    	    then
     	        v3:=v1+v2;
     	write (v1);
     	write (v2);
-    	write (v3)
+    	write (v3);
    	end

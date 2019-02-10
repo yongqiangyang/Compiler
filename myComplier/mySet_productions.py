@@ -9,7 +9,7 @@ from myComplier import Complier
 # <proc> → procedure <id>（[<id>{,<id>}]）;<block>{;<proc>}
 # <body> → begin <statement>{;<statement>}end
 # <statement> → <id> := <exp>               
-# |if <lexp> then <statement>[else <statement>]
+#                |if <lexp> then <statement>[else <statement>]
 #                |while <lexp> do <statement>
 #                |call <id>[（<exp>{,<exp>}）]
 #                |<body>
@@ -34,29 +34,29 @@ productions = {
     'block': [
         ['body1'],
         ['condecl1','body1' ],
-        ['condecl1','vardecl','body1'],
-        ['vardecl','body1'],
-        ['condecl1','vardecl','proc1','body1'],
+        ['condecl1','vardecl1','body1'],
+        ['vardecl1','body1'],
+        ['condecl1','vardecl1','proc1','body1'],
         ['condecl1','proc1','body1'],
         ['proc1','body1'],
+        ['vardecl1','proc1','body1'],
     ],
     'condecl1': [
         ['const','condecl2'],
     ],
     'condecl2': [
         ['const1',',','condecl2'],
-        ['condecl3']
-    ],
-    'condecl3': [
-        ['const1',';'],
+        ['const1']
     ],
     'const1': [
         ['id',':=' ,'integer'],
     ],
-    'vardecl': [
-        ['var','id',';'],
-        ['var','id',',','id',';'],
-        ['var','id',',','id',',','id',';'],
+    'vardecl1': [
+        ['var','vardecl2'],
+    ],
+    'vardecl2':[
+        ['id',',','vardecl2'],
+        ['id']
     ],
     'proc1': [
         ['procedure','id','(','proc2',')','M3','proc3' ],
@@ -71,30 +71,42 @@ productions = {
     ],
     'proc3': [
         ['block'],
-        ['block',';','proc1'],
+        ['block',';','proc4'],
+    ],
+    'proc4':[
+        ['proc1'],
+        ['proc1','proc4'],
     ],
     'body1': [
         ['begin','body2'],
     ],
     'body2': [
-        ['body3'],
+        ['statement','end'],
         ['statement',';','body2'],
     ],
-    'body3': [
-        ['statement','end'],
-    ],
+    #read和write都可以有多个参数
     'statement': [
         ['if','lexp','then','M1','statement'],
         ['if','lexp','then','M1','statement','N','else','M2','statement'],
         ['while','M1','lexp','do','M2','statement'],
+        ['call','id','(','call1',')'],
         ['call','id','(',')'],
-        ['call','id','(','exp1',')'],
-        ['call','id','(','exp1',',','exp1',')'],
-        ['call','id','(','exp1',',','exp1',',','exp1',')'],
         ['id',':=','exp1'],
-        ['read','(','id',')'],
-        ['write','(','exp1',')'],
+        ['read','(','id1',')'],
+        ['write','(','exp',')'],
         ['body1']
+    ],
+    'id1':[
+        ['id'],
+        ['id',',','id1'],
+    ],
+    'exp':[
+        ['exp1'],
+        ['exp1',',','exp'],
+    ],
+    'call1':[
+        ['exp1',',','call1'],
+        ['exp1']
     ],
     'M1':[
         [':']

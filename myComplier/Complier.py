@@ -1,5 +1,4 @@
 import json
-import sys
 from pprint import pprint
 from copy import deepcopy
 
@@ -18,18 +17,15 @@ def write_productions_to_file(start, productions, path='productions.txt'):
 
 
 class Compiler:
-    #终结符
-    overs = set()
-    #保留字
-    reserved = set()
-    #单目操作符
-    one_op_set = set()
-    #双目操作符
-    two_next = dict()
-
-    def __init__(self, log_level=2, sharp='#', point='.', acc='acc', productions_file='productions.txt'):
-        #设置在终端的日志的等级
-        self.log_level = log_level
+    def __init__(self, sharp='#', point='.', acc='acc', productions_file='productions.txt'):
+        # 终结符
+        self.overs = set()
+        # 保留字
+        self.reserved = set()
+        # 单目操作符
+        self.one_op_set = set()
+        # 双目操作符
+        self.two_next = dict()
 
         with open(productions_file, 'r') as f:
             lines = f.readlines()
@@ -79,6 +75,7 @@ class Compiler:
                         #识别单目操作符，比如： + - * / （ ）
                         else:
                             self.one_op_set.add(sign)
+
         #将存在于双目操作符中的首字符的单目操作符删去，并在双目操作符中添加 空格
         remove_set = set()
         for sign in self.one_op_set:
@@ -87,15 +84,12 @@ class Compiler:
                 remove_set.add(sign)
         for sign in remove_set:
             self.one_op_set.remove(sign)
-        if self.log_level >= 3:
-            #print('over sign set:')
-            #pprint(self.overs)
-            print('reserved word set:')
-            pprint(self.reserved)
-            print('one_op_set:')
-            pprint(self.one_op_set)
-            print('two_next dict:')
-            pprint(self.two_next)
+        # print('reserved word set:')
+        # pprint(self.reserved)
+        # print('one_op_set:')
+        # pprint(self.one_op_set)
+        # print('two_next dict:')
+        # pprint(self.two_next)
 
     #求文法的first集与Follow集
     def get_first_follow(self):
@@ -154,9 +148,6 @@ class Compiler:
                                 self.follow[sign] |= self.follow[nontermainal]
             if old_follow == self.follow:
                 break
-        if self.log_level >= 3:
-            print('follow:')
-            pprint(self.follow)
 
     #得到项目
     def get_items(self):
@@ -171,9 +162,8 @@ class Compiler:
                         right[:i] + [self.point, ] + right[i:]
                     )
                 self.items[nonterminal].append(right + [self.point, ])
-        if self.log_level >= 3:
-            print('items:')
-            pprint(self.items)
+        print("项目集：")
+        pprint(self.items)
 
     # 递归求解输入项目集合的闭包
     def closure(self, production_list):
@@ -276,11 +266,10 @@ class Compiler:
             # 如果没有状态可以分析，结束循环
             if index > last_index:
                 break
-        if self.log_level >= 3:
-            print('stauts list:')
-            pprint(self.status_list)
-            print('analyse table:')
-            pprint(self.analyse_table)
+        # print('stauts list:')
+        # pprint(self.status_list)
+        print('analyse table:')
+        pprint(self.analyse_table)
 
     # 词法分析函数
     # 检查是否为保留字
@@ -289,8 +278,14 @@ class Compiler:
 
     # 记录tag与string，清空token
     def out(self, c=''):
+        if(self.token=='else'):
+            self.tag_list.append(':')
+            self.string_list.append(':')
         self.tag_list.append(self.token if c == '' else c)
         self.string_list.append(self.token)
+        if(self.token=='then' or self.token=='else' or self.token=='while' or self.token=='do'):
+            self.tag_list.append(':')
+            self.string_list.append(':')
         self.token = ''
 
     # 读取下一个输出符号，没有返回False
@@ -369,15 +364,13 @@ class Compiler:
                 case = 'two_op'
             # 不合法字符，报错退出循环
             else:
-                print('error index %s: unkown character "%s"' % (self.index, self.ch), end='\n\n')
+                print('词法分析错误： 索引： %s: 不明字符： "%s"' % (self.index, self.ch), end='\n\n')
                 return False
             # 词法分析出错，报错退出循环
             if not self.switch[case](self):
-                print('error index %s: unkown character "%s"' % (self.index, self.token), end='\n\n')
+                print('词法分析错误： 索引： %s: 不明字符： "%s"' % (self.index, self.token), end='\n\n')
                 return False
         with open(self.file_name + '.two', 'w') as f:
-            if self.log_level >= 1:
-                print('lexical analyse:')
             for i in range(len(self.tag_list)):
                 if i == len(self.tag_list)-1:
                     f.write('%s %s' %(self.string_list[i],self.tag_list[i]))
@@ -387,25 +380,23 @@ class Compiler:
 
     #分析语法
     def analyse_yufa(self):
-        if self.log_level >= 1:
-            print('grammar analyse:')
+        print('grammar analyse:')
         # 初始化输入串列表、状态栈、符号栈
         self.tag_list += self.sharp
         string_index = 0
         status_stack = [0, ]
         sign_stack = [self.sharp, ]
-        # 初始化语义分析的四元式列表、分析栈
+        #初始化语义分析的四元式列表、分析栈
         siyuanshi_list = []
         siyuanshi_num=0
         temp_stack = []         #临时栈
         temp_index = 0          #临时栈索引
-        lexp_truelist = []      #
-        lexp_falselist = []     #
-        M1_quad=[]              #
-        M2_quad=[]              #
-        N_nextlist=[]           #
-        S_nextlist=[]           #
-        temp_while=0
+        lexp_truelist = []      #回填技术
+        lexp_falselist = []     #回填技术
+        M1_quad=[]              #回填技术
+        M2_quad=[]              #回填技术
+        N_nextlist=[]           #回填技术
+        S_nextlist=[]           #回填技术
         # 不停分析直到接受
         while self.analyse_table[status_stack[-1]][self.tag_list[string_index]][0] != self.acc:
             # 如果不是r，则为s
@@ -420,8 +411,7 @@ class Compiler:
 
                 # advance
                 string_index += 1
-                if self.log_level >= 1:
-                    print(status_stack, sign_stack,temp_stack)
+                print(status_stack, sign_stack,temp_stack)
             else:
                 # 为r，取出对应产生式的左部与右部
                 left = self.analyse_table[status_stack[-1]][self.tag_list[string_index]][2][0]
@@ -534,7 +524,7 @@ class Compiler:
                     lexp_falselist.pop()
 
                 # 分析读入操作
-                elif 'statement' == left and ['read','(','id',')'] == right:
+                elif 'id1' == left:
                     op = 'read'
                     one = temp_stack[-1] if type(temp_stack[-1]) == str else 'temp%d' % temp_stack[-1]
                     two = '_'
@@ -545,7 +535,7 @@ class Compiler:
                     temp_stack.pop()
 
                 #分析写出操作
-                elif 'statement' == left and ['write','(','exp1',')'] == right:
+                elif 'exp' == left:
                     op = 'write'
                     one = temp_stack[-1] if type(temp_stack[-1]) == str else 'temp%d' % temp_stack[-1]
                     two = '_'
@@ -555,8 +545,8 @@ class Compiler:
                     S_nextlist.append(siyuanshi_num)
                     temp_stack.pop()
 
-                # 分析调用操作
-                elif 'statement' == left and ['call','id','(',')'] == right:
+                #分析调用操作
+                elif 'statement' == left and (['call','id','(','call1',')'] == right or ['call','id','(',')'] == right):
                     op = 'call'
                     one = temp_stack[-1] if type(temp_stack[-1]) == str else 'temp%d' % temp_stack[-1]
                     two = '_'
@@ -566,77 +556,17 @@ class Compiler:
                     S_nextlist.append(siyuanshi_num)
 
                 #分析调用操作
-                elif 'statement' == left and ['call','id','(','exp1',')'] == right:
+                elif 'call1'==left:
                     op = 'param'
-                    one = temp_stack[-1] if type(temp_stack[-1]) == str else 'temp%d' % temp_stack[-1]
+                    one = temp_stack[-1]
                     two = '_'
                     result = '_'
                     siyuanshi_list.append([siyuanshi_num, op, one, two, result])
                     siyuanshi_num += 1
                     temp_stack.pop()
-                    op = 'call'
-                    one = temp_stack[-1] if type(temp_stack[-1]) == str else 'temp%d' % temp_stack[-1]
-                    two = '_'
-                    result = '_'
-                    siyuanshi_list.append([siyuanshi_num, op, one, two, result])
-                    siyuanshi_num += 1
-                    S_nextlist.append(siyuanshi_num)
-
-                # 分析调用操作
-                elif 'statement' == left and ['call','id','(','exp1',',','exp1',')'] == right:
-                    op = 'param'
-                    one = temp_stack[-1] if type(temp_stack[-1]) == str else 'temp%d' % temp_stack[-1]
-                    two = '_'
-                    result = '_'
-                    siyuanshi_list.append([siyuanshi_num, op, one, two, result])
-                    siyuanshi_num += 1
-                    temp_stack.pop()
-                    op = 'param'
-                    one = temp_stack[-1] if type(temp_stack[-1]) == str else 'temp%d' % temp_stack[-1]
-                    two = '_'
-                    result = '_'
-                    siyuanshi_list.append([siyuanshi_num, op, one, two, result])
-                    siyuanshi_num += 1
-                    temp_stack.pop()
-                    op = 'call'
-                    one = temp_stack[-1] if type(temp_stack[-1]) == str else 'temp%d' % temp_stack[-1]
-                    two = '_'
-                    result = '_'
-                    siyuanshi_list.append([siyuanshi_num, op, one, two, result])
-                    siyuanshi_num += 1
-
-                # 分析调用操作
-                elif 'statement' == left and ['call','id','(','exp1',',','exp1',',','exp1',')'] == right:
-                    op = 'param'
-                    one = temp_stack[-1] if type(temp_stack[-1]) == str else 'temp%d' % temp_stack[-1]
-                    two = '_'
-                    result = '_'
-                    siyuanshi_list.append([siyuanshi_num, op, one, two, result])
-                    siyuanshi_num += 1
-                    temp_stack.pop()
-                    op = 'param'
-                    one = temp_stack[-1] if type(temp_stack[-1]) == str else 'temp%d' % temp_stack[-1]
-                    two = '_'
-                    result = '_'
-                    siyuanshi_list.append([siyuanshi_num, op, one, two, result])
-                    siyuanshi_num += 1
-                    temp_stack.pop()
-                    op = 'param'
-                    one = temp_stack[-1] if type(temp_stack[-1]) == str else 'temp%d' % temp_stack[-1]
-                    two = '_'
-                    result = '_'
-                    siyuanshi_list.append([siyuanshi_num, op, one, two, result])
-                    siyuanshi_num += 1
-                    temp_stack.pop()
-                    op = 'call'
-                    one = temp_stack[-1] if type(temp_stack[-1]) == str else 'temp%d' % temp_stack[-1]
-                    two = '_'
-                    result = '_'
-                    siyuanshi_list.append([siyuanshi_num, op, one, two, result])
-                    siyuanshi_num += 1
 
                 # 分析声明变量操作
-                elif 'vardecl' == left and ['var','id',';'] == right:
+                elif 'vardecl2' == left:
                     op = 'var'
                     one = temp_stack[-1] if type(temp_stack[-1]) == str else 'temp%d' % temp_stack[-1]
                     two = '_'
@@ -645,41 +575,20 @@ class Compiler:
                     siyuanshi_num += 1
                     temp_stack.pop()
 
-                # 分析声明变量操作
-                elif 'vardecl' == left and ['var','id',',','id',';'] == right:
-                    op = 'var'
-                    one = temp_stack[-1] if type(temp_stack[-1]) == str else 'temp%d' % temp_stack[-1]
-                    two = '_'
-                    result = '_'
-                    siyuanshi_list.append([siyuanshi_num, op, one, two, result])
-                    siyuanshi_num += 1
-                    temp_stack.pop()
-
-                # 分析声明变量操作
-                elif 'vardecl' == left and ['var','id',',','id',',','id',';'] == right:
-                    op = 'var'
-                    one = temp_stack[-1] if type(temp_stack[-1]) == str else 'temp%d' % temp_stack[-1]
-                    two = '_'
-                    result = '_'
-                    siyuanshi_list.append([siyuanshi_num, op, one, two, result])
-                    siyuanshi_num += 1
-                    temp_stack.pop()
-                elif 'proc1' == left and ['procedure','id','(',')','M3','proc3' ] == right:
+                #分析子过程
+                elif 'proc1' == left:
                     op = 'ret'
                     one = '_'
                     two = '_'
                     result = '_'
                     siyuanshi_list.append([siyuanshi_num, op, one, two, result])
                     siyuanshi_num += 1
-                elif 'proc1' == left and ['procedure','id','(','proc2',')','M3','proc3' ] == right:
-                    op = 'ret'
-                    one = '_'
-                    two = '_'
-                    result = '_'
-                    siyuanshi_list.append([siyuanshi_num, op, one, two, result])
-                    siyuanshi_num += 1
+
+                # 分析子过程
                 elif 'proc2' == left:
                     temp_stack.pop()
+
+                # 分析子过程
                 elif 'M3' == left and [';' ] == right:
                     op = 'proc'
                     one = temp_stack[-1] if type(temp_stack[-1]) == str else 'temp%d' % temp_stack[-1]
@@ -688,26 +597,24 @@ class Compiler:
                     siyuanshi_list.append([siyuanshi_num, op, one, two, result])
                     siyuanshi_num += 1
                     temp_stack.pop()
+
                 # 语义分析结束
                 # pop(第i个产生式右部文法符号的个数)
                 for i in range(len(right)):
                     sign_stack.pop()
                     status_stack.pop()
-                if self.log_level >= 1:
-                    print(status_stack, sign_stack,temp_stack)
+                print(status_stack, sign_stack,temp_stack)
                 # push(GOTO[新的栈顶状态][第i个产生式的左部])
                 status_stack.append(self.analyse_table[status_stack[-1]][left][0])
                 sign_stack.append(left)
-                if self.log_level >= 1:
-                    print(status_stack, sign_stack,temp_stack)
+                print(status_stack, sign_stack,temp_stack)
 
             # error，退出循环
             if self.tag_list[string_index] not in self.analyse_table[status_stack[-1]].keys():
-                print('fail1', string_index, self.tag_list[string_index], status_stack[-1])
+                print('语法分析错误：', string_index, self.tag_list[string_index], status_stack[-1])
                 return False
-        if self.log_level >= 2:
-            print("四元式：")
-            pprint(siyuanshi_list)
+        print("四元式：")
+        pprint(siyuanshi_list)
         with open(self.file_name + '.four', 'w') as f:
             for i in range(len(siyuanshi_list)):
                 if i == len(siyuanshi_list)-1:
@@ -720,25 +627,18 @@ class Compiler:
         print('ok')
         return True
 
+
+    #词法分析&&语法分析
     def analyse(self, file):
         raw_string = open(file, 'r').read()
-        self.raw_string = raw_string.replace('\t', '').replace('\n', '')
+        #源程序预处理
+        self.raw_string = raw_string.replace('\t', '')
+        self.raw_string = self.raw_string.replace('\n', ' ')
         self.file_name = file[ :file.rindex('.')]
-        print('analysing: ' + file, end='\n\n')
-        if self.log_level >= 3:
-            print(raw_string, end='\n\n')
 
         self.analyse_cifa() and self.analyse_yufa()
 
 
-
-# analyzer1 = Compiler()
-# analyzer1.analyse("input.txt")
-# analyzer1.analyse("input_if.txt")
-# analyzer1.analyse("input_while_do.txt")
-# analyzer1.analyse("input_if&&while.txt")
-# analyzer1.analyse("input_call_write_read.txt")
-# analyzer1.analyse("input_finaly.txt")
-# analyzer1.analyse("input_proc.txt")
-# analyzer1.analyse("if_test.txt")
-# analyzer1.analyse("input_call.txt")
+if __name__ == '__main__':
+     analyzer = Compiler()
+     analyzer.analyse("test1.txt")
